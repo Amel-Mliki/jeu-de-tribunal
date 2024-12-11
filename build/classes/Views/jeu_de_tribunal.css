@@ -1,0 +1,29 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.root{
+    -fx-background-image: "jeu_de_tibunal.jpg";
+}
+
+.button{
+    
+    -fx-background-color: #2b4e81;
+    -fx-cursor: hand;
+    
+}
+.button:hover{
+    
+    -fx-background-color: #94c5d7;
+}
+
+.button_{
+    
+    -fx-background-color: #2b4e81;
+    -fx-cursor: hand;
+    
+}
+.button_:hover{
+    
+    -fx-background-color: #94c5d7;
+}

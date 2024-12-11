@@ -1,0 +1,50 @@
+.button1{
+    
+    -fx-background-color: #1a7794;
+    -fx-cursor: hand;
+    
+}
+.button1:hover{
+    
+    -fx-background-color: #84bdcf;
+}
+.button2{
+    
+    -fx-background-color: #1a7794;
+    -fx-cursor: hand;
+    
+}
+.button2:hover{
+    
+    -fx-background-color: #84bdcf;
+}
+.button3{
+    
+    -fx-background-color: #1a7794;
+    -fx-cursor: hand;
+    
+}
+.button3:hover{
+    
+    -fx-background-color: #84bdcf;
+}
+.button4{
+    
+    -fx-background-color: #1a7794;
+    -fx-cursor: hand;
+    
+}
+.button4:hover{
+    
+    -fx-background-color: #84bdcf;
+}
+.button5{
+    
+    -fx-background-color: #1a7794;
+    -fx-cursor: hand;
+    
+}
+.button5:hover{
+    
+    -fx-background-color: #84bdcf;
+}

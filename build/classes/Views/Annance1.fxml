@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="rootPane" prefHeight="500.0" prefWidth="800.0" style="-fx-background-color: #aba8f2;" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.Annance1Controller">
+    <stylesheets>
+        <URL value="@annance1.css" />
+    </stylesheets>
+   <children>
+      <ImageView fitHeight="360.0" fitWidth="800.0" pickOnBounds="true">
+         <image>
+            <Image url="@annance1_c.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="400.0" layoutY="368.0" prefHeight="34.0" prefWidth="233.0" text="Le chef de la police">
+         <font>
+            <Font name="Arial Bold Italic" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="6.0" layoutY="378.0" prefHeight="84.0" prefWidth="758.0" text="Il ya une crime et voila son emplacement tu dois le découvrir et selectionner les preuves!!!! ">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="48.0" fitWidth="109.0" layoutX="660.0" layoutY="438.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@........jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="141.0" fitWidth="117.0" layoutX="172.0" layoutY="20.0" pickOnBounds="true">
+         <image>
+            <Image url="@maison.jpg" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

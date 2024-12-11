@@ -1,0 +1,32 @@
+
+
+
+
+.textfiel-design{
+    
+    -fx-background-color:transparent;
+    -fx-background-raduis:5px;
+    -fx-border-color:linear-gradient(to bottom right, #3a4f93, #a43189);
+    -fx-border-raduis:5px;
+    -fx-font-size:15px;
+}
+.insert-button{
+    
+    -fx-backgound-color:transparent;
+    -fx-font-size:15px;
+    -fx-cusor:hand;
+    -fx-text-fill:#3a4f93;
+}
+
+.insert-button{
+    
+    -fx-backgound-color:#333;
+    -fx-background-raduis:20px;
+    -fx-cusor:hand;
+    -fx-text-fill:black;
+}
+.insert-button:hover{
+    
+    
+    -fx-background-color:#4677ba;
+}

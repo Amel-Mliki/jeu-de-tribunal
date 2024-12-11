@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="an" prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.CrimeSceneMController">
+   <children>
+      <ImageView fx:id="bg" fitHeight="411.0" fitWidth="676.0" layoutX="-7.0" layoutY="-2.0" onMouseClicked="#startAnimation" onMouseReleased="#stopAnimation" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@bg.jpg" />
+         </image>
+      </ImageView>
+      <SplitPane layoutY="401.0" onMouseDragEntered="#stopAnimation1" orientation="VERTICAL" prefHeight="70.0" prefWidth="230.0" />
+      <SplitPane layoutX="229.0" layoutY="401.0" onMouseDragEntered="#stopAnimation" onMouseEntered="#stopAnimation1" orientation="VERTICAL" prefHeight="70.0" prefWidth="213.0" />
+      <SplitPane layoutX="442.0" layoutY="401.0" onMouseEntered="#stopAnimation2" orientation="VERTICAL" prefHeight="70.0" prefWidth="222.0" />
+      <ImageView fx:id="animatedImage" fitHeight="42.0" fitWidth="51.0" layoutX="37.0" layoutY="325.0" onMouseClicked="#startAnimation" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@a2.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="animatedImage1" fitHeight="35.0" fitWidth="45.0" layoutX="185.0" layoutY="240.0" onMouseClicked="#startAnimation1" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@a1.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="animatedImage2" fitHeight="27.0" fitWidth="45.0" layoutX="270.0" layoutY="260.0" onMouseClicked="#startAnimation2" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@a3.jpg" />
+         </image>
+      </ImageView>
+      <Button layoutX="228.0" layoutY="472.0" mnemonicParsing="false" onAction="#incrementScore1" prefHeight="27.0" prefWidth="214.0" text="Glove" />
+      <Button layoutY="472.0" mnemonicParsing="false" onAction="#incrementScore" onMouseClicked="#startScoreAnimation" prefHeight="27.0" prefWidth="230.0" text="Lighter" />
+      <Button layoutX="442.0" layoutY="472.0" mnemonicParsing="false" onAction="#incrementScore2" prefHeight="27.0" prefWidth="222.0" text="Matches" />
+      <Label fx:id="scoreLabel" layoutX="688.0" layoutY="1.0" text="Score">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="next" fitHeight="42.0" fitWidth="109.0" layoutX="688.0" layoutY="450.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@........jpg" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

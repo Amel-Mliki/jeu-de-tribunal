@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="an" prefHeight="500.0" prefWidth="800.0" style="-fx-background-color: #aba8f2;" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.PreuveController">
+    <stylesheets>
+        <URL value="@preuve.css" />
+    </stylesheets>
+   <children>
+      <AnchorPane prefHeight="494.0" prefWidth="329.0">
+         <children>
+            <Label fx:id="T" layoutX="50.0" layoutY="185.0" text="type:">
+               <font>
+                  <Font name="Arial Bold Italic" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="S" layoutX="25.0" layoutY="73.0" text="source:">
+               <font>
+                  <Font name="Arial Bold Italic" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="F" layoutX="25.0" layoutY="129.0" text="fiabilité:">
+               <font>
+                  <Font name="Arial Bold Italic" size="18.0" />
+               </font>
+            </Label>
+            <ComboBox fx:id="types" layoutX="101.0" layoutY="179.0" onKeyTyped="#textfieldDesign" onMouseClicked="#textfieldDesign" onMouseDragged="#textfieldDesign" prefHeight="26.0" prefWidth="190.0" promptText="Choisir..." styleClass="textfiel-design" stylesheets="@preuve.css" />
+            <Button fx:id="inserer" layoutX="23.0" layoutY="269.0" mnemonicParsing="false" onAction="#insererpreuve" prefHeight="42.0" prefWidth="130.0" styleClass="insert-button" stylesheets="@preuve.css" text="Insérer" textFill="#1e0404">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="next" layoutX="65.0" layoutY="417.0" mnemonicParsing="false" onAction="#nextinterface" prefHeight="34.0" prefWidth="190.0" styleClass="insert-button" stylesheets="@preuve.css" text="Next">
+               <font>
+                  <Font name="Britannic Bold" size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="modifier" layoutX="172.0" layoutY="269.0" mnemonicParsing="false" onAction="#modifierpreuve" prefHeight="42.0" prefWidth="138.0" styleClass="insert-button" stylesheets="@preuve.css" text="Modifier">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="supprimer" layoutX="95.0" layoutY="341.0" mnemonicParsing="false" onAction="#supprimerpreuve" prefHeight="42.0" prefWidth="130.0" styleClass="insert-button" stylesheets="@preuve.css" text="supprimer">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Button>
+            <TextField fx:id="sources" layoutX="101.0" layoutY="68.0" onKeyTyped="#textfieldDesign" onMouseClicked="#textfieldDesign" onMouseDragged="#textfieldDesign" prefHeight="32.0" prefWidth="190.0" />
+            <TextField fx:id="fiabilites" layoutX="101.0" layoutY="124.0" onKeyTyped="#textfieldDesign" onMouseClicked="#textfieldDesign" onMouseDragged="#textfieldDesign" prefHeight="32.0" prefWidth="190.0" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="330.0" prefHeight="494.0" prefWidth="469.0" stylesheets="@preuve.css">
+         <children>
+            <Separator layoutX="-3.0" layoutY="14.0" orientation="VERTICAL" prefHeight="474.0" prefWidth="0.0" />
+            <TableView fx:id="table_preuve" layoutX="14.0" layoutY="26.0" prefHeight="454.0" prefWidth="439.0" style="-fx-background-color: #aba8f2;">
+              <columns>
+                <TableColumn fx:id="col_source" prefWidth="144.00006103515625" text="source" />
+                <TableColumn fx:id="col_fiabilite" prefWidth="144.0" text="fiabilite" />
+                  <TableColumn fx:id="col_type" prefWidth="150.4000244140625" text="type" />
+              </columns>
+            </TableView>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

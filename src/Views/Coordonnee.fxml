@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="500.0" prefWidth="800.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.CoordonneeController">
+    <stylesheets>
+        <URL value="@coordonnee.css" />
+    </stylesheets>
+   <children>
+      <ImageView fitHeight="500.0" fitWidth="808.0" layoutX="-9.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@cri.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="next" fitHeight="43.0" fitWidth="124.0" layoutX="699.0" layoutY="455.0" onMouseClicked="#next" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@........jpg" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
